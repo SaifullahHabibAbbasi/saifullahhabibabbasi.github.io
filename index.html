@@ -3,54 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saifullah Habib's Portfolio</title>
-    <meta name="description" content="Portfolio of Saifullah Habib, a passionate Computer Science student with skills in C, C++, HTML, CSS, JavaScript, C#, and MySQL.">
-    <meta name="keywords" content="Saifullah,Saifullah Habib,Saifullah Habib Abbasi, Portfolio, Computer Science, C, C++, HTML, CSS, JavaScript, C#, MySQL, Windows, Linux, Ubuntu, Visual Studio Code, Mono Develop, Terminal">
-    <meta name="author" content="Saifullah Habib Abbasi">
+    <title>Saifullah Habib Abbasi - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Additional custom styles */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-color: #121212;
+            color: white;
+            overflow-x: hidden;
+        }
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: #f39c12;
+        }
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            background: url('background.jpg') no-repeat center center/cover;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+            opacity: 0.8;
+        }
+        section {
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .projects, .blog, .contact {
+            background: #1e1e1e;
+            margin: 50px auto;
+            padding: 50px;
+            border-radius: 10px;
+            width: 80%;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #000;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Saifullah Habib</h1>
-            <p>Computer Science Student</p>
-        </div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
     
-    <section class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I am Saifullah Habib, a passionate Computer Science student based in Pakistan. I am deeply committed to my studies and aspire to become a top programmer in the field.</p>
-        </div>
+    <div class="hero">
+        <h1>Saifullah Habib Abbasi</h1>
+        <p>Software Engineer | Full-Stack Developer | Tech Enthusiast</p>
+    </div>
+    
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <p>A showcase of my latest works and experiments.</p>
     </section>
-
-    <section class="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li>Programming Languages: C, C++, HTML, CSS, JavaScript, C#</li>
-                <li>Operating System Knowledge: Windows, Linux (Ubuntu)</li>
-                <li>IDEs: Visual Studio Code, Mono Develop</li>
-                <li>Database: MySQL</li>
-            </ul>
-        </div>
+    
+    <section id="blog" class="blog">
+        <h2>Blog</h2>
+        <p>Insights, stories, and experiences from my journey.</p>
     </section>
-
-    <section class="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>You can reach me at: <a href="mailto:saifullahhabibabbasi2000@gmail.com">saifullahhabibabbasi2000@gmail.com</a></p>
-        </div>
+    
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Email: saifullahhabibabbasi2000@gmail.com</p>
     </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 Saifullah Habib</p>
-        </div>
+    
+    <footer class="footer">
+        <p>Don't hesitate contacting</p>
     </footer>
 </body>
 </html>
-
